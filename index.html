@@ -6,49 +6,60 @@
   <title>Ventures Algo</title>
   <style>
     body {
-      margin:0;
-      font-family: Arial, sans-serif;
-      background:#0b0b0f;
-      color:#e0e0ff;
+      margin:0; font-family: 'Segoe UI', sans-serif;
+      background:#0b0b0f; color:#e0e0ff;
     }
     header {
-      display:flex;
-      align-items:center;
-      padding:20px;
+      display:flex; align-items:center; padding:20px 40px;
     }
-    header img { width:40px; margin-right:10px; }
     header h1 { color:#c084fc; font-size:1.5rem; }
     main {
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:80vh;
-      flex-direction:column;
-      text-align:center;
+      display:flex; flex-direction:column; justify-content:center; align-items:center;
+      text-align:center; height:80vh;
     }
-    .btn {
-      margin:10px;
-      background: linear-gradient(135deg,#9333ea,#7e22ce);
-      color:white;
-      padding:15px 30px;
-      border:none;
-      border-radius:10px;
-      text-decoration:none;
-      font-size:1.2rem;
-      transition:0.3s;
+    main h2 {
+      font-size:2.5rem; margin-bottom:40px; color:#a855f7;
     }
-    .btn:hover { background: linear-gradient(135deg,#a855f7,#9333ea); }
+    .cards {
+      display:flex; gap:30px; flex-wrap:wrap; justify-content:center;
+    }
+    .card {
+      background:#18181b; border-radius:12px; padding:40px;
+      width:260px; text-align:center; transition:0.3s; cursor:pointer;
+      box-shadow:0 0 20px rgba(168,85,247,0.2);
+    }
+    .card:hover { transform:translateY(-5px); box-shadow:0 0 30px rgba(168,85,247,0.4); }
+    .card h3 { color:#c084fc; margin-bottom:10px; }
+    .card p { font-size:0.95rem; color:#aaa; }
+    a { text-decoration:none; color:inherit; }
+    footer { text-align:center; padding:20px; font-size:0.9rem; color:#777; }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo">
     <h1>Ventures Algo</h1>
   </header>
 
   <main>
-    <a href="#analytics" class="btn">View Analytics</a>
-    <a href="#pricing" class="btn">Pricing</a>
+    <h2>Modern Trading with AI Precision</h2>
+    <div class="cards">
+      <a href="analytics.html">
+        <div class="card">
+          <h3>Analytics</h3>
+          <p>View our performance stats and client reviews.</p>
+        </div>
+      </a>
+      <a href="pricing.html">
+        <div class="card">
+          <h3>Pricing</h3>
+          <p>Choose between lifetime access or monthly plans.</p>
+        </div>
+      </a>
+    </div>
   </main>
+
+  <footer>
+    &copy; 2025 Ventures Algo. All rights reserved.
+  </footer>
 </body>
 </html>
