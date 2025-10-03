@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - Ventures Algo</title>
+  <style>
+    body { margin:0; font-family:'Segoe UI', sans-serif; background:#0b0b0f; color:#e0e0ff; }
+    header { padding:20px 40px; }
+    header h1 { color:#c084fc; }
+    main { max-width:900px; margin:50px auto; padding:20px; text-align:center; }
+    .pricing-container { display:flex; gap:30px; flex-wrap:wrap; justify-content:center; margin-top:40px; }
+    .plan {
+      background:#18181b; border-radius:12px; padding:30px; width:250px;
+      box-shadow:0 0 15px rgba(168,85,247,0.3); transition:0.3s;
+    }
+    .plan:hover { transform:translateY(-5px); box-shadow:0 0 25px rgba(168,85,247,0.5); }
+    .plan h3 { color:#c084fc; margin-bottom:10px; }
+    .plan p { font-size:1.1rem; margin-bottom:15px; }
+    .price { font-size:1.8rem; font-weight:bold; color:#a855f7; }
+    a { color:#c084fc; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">← Back</a> | Pricing</h1>
+  </header>
+
+  <main>
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-container">
+      <div class="plan">
+        <h3>Lifetime Access</h3>
+        <p class="price">£300</p>
+        <p>One-time payment for unlimited use.</p>
+      </div>
+      <div class="plan">
+        <h3>Monthly Plan</h3>
+        <p class="price">£35/month</p>
+        <p>Cancel anytime. Full access included.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
