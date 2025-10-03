@@ -5,169 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ventures Algo</title>
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
-
     body {
-      background: #0b0b0f;
-      color: #e0e0ff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* --- Loader --- */
-    #loader {
-      position: fixed;
-      top:0; left:0;
-      width:100%; height:100%;
+      margin:0;
+      font-family: Arial, sans-serif;
       background:#0b0b0f;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      z-index: 9999;
-      transition: opacity 1s ease;
+      color:#e0e0ff;
     }
-
-    #loader h1 {
-      font-size: 5rem;
-      color:#a855f7;
-      animation: pulse 1.5s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); opacity:1; }
-      50% { transform: scale(1.1); opacity:0.6; }
-      100% { transform: scale(1); opacity:1; }
-    }
-
-    /* --- Header --- */
     header {
-      display: flex;
-      align-items: center;
-      padding: 20px 40px;
-    }
-
-    header img {
-      width: 40px;
-      margin-right: 10px;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      color: #c084fc;
-    }
-
-    /* --- Main Section --- */
-    main {
-      flex: 1;
       display:flex;
-      flex-direction: column;
+      align-items:center;
+      padding:20px;
+    }
+    header img { width:40px; margin-right:10px; }
+    header h1 { color:#c084fc; font-size:1.5rem; }
+    main {
+      display:flex;
       justify-content:center;
       align-items:center;
+      height:80vh;
+      flex-direction:column;
       text-align:center;
     }
-
-    .buttons {
-      margin-top: 40px;
-      display:flex;
-      gap: 20px;
-    }
-
     .btn {
-      background: linear-gradient(135deg, #9333ea, #7e22ce);
+      margin:10px;
+      background: linear-gradient(135deg,#9333ea,#7e22ce);
       color:white;
       padding:15px 30px;
       border:none;
       border-radius:10px;
-      font-size:1.2rem;
-      cursor:pointer;
-      transition: all 0.3s ease;
       text-decoration:none;
-      box-shadow: 0 0 15px rgba(147,51,234,0.4);
+      font-size:1.2rem;
+      transition:0.3s;
     }
-
-    .btn:hover {
-      background: linear-gradient(135deg, #a855f7, #9333ea);
-      transform: translateY(-3px);
-      box-shadow: 0 0 25px rgba(168,85,247,0.6);
-    }
-
-    /* --- Sections --- */
-    section {
-      padding:100px 20px;
-      max-width:900px;
-      margin:0 auto;
-      text-align:center;
-    }
-
-    section h2 {
-      color:#c084fc;
-      font-size:2rem;
-      margin-bottom:15px;
-    }
-
-    footer {
-      text-align:center;
-      padding:20px;
-      font-size:0.9rem;
-      color:#aaa;
-    }
+    .btn:hover { background: linear-gradient(135deg,#a855f7,#9333ea); }
   </style>
 </head>
 <body>
-
-  <!-- Loader -->
-  <div id="loader">
-    <h1>V</h1>
-  </div>
-
-  <!-- Header -->
   <header>
-    <img src="logo.png" alt="Ventures Algo Logo">
+    <img src="logo.png" alt="Logo">
     <h1>Ventures Algo</h1>
   </header>
 
-  <!-- Main -->
   <main>
-    <div class="buttons">
-      <a href="#analytics" class="btn">View Analytics</a>
-      <a href="#pricing" class="btn">Pricing</a>
-    </div>
+    <a href="#analytics" class="btn">View Analytics</a>
+    <a href="#pricing" class="btn">Pricing</a>
   </main>
-
-  <!-- Analytics Section -->
-  <section id="analytics">
-    <h2>Analytics Dashboard</h2>
-    <p>Coming soon: powerful insights into algorithmic performance.</p>
-  </section>
-
-  <!-- Pricing Section -->
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <p>Flexible plans designed to fit your trading journey.</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Ventures Algo. All rights reserved.
-  </footer>
-
-  <script>
-    // Loader fade-out
-    window.addEventListener("load", () => {
-      const loader = document.getElementById("loader");
-      loader.style.opacity = "0";
-      setTimeout(() => { loader.style.display = "none"; }, 1000);
-    });
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href'))
-          .scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
 </body>
 </html>
