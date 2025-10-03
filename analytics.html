@@ -3,41 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analytics - Ventures Algo</title>
+  <title>Ventures Algo</title>
   <style>
-    body { margin:0; font-family:'Segoe UI', sans-serif; background:#0b0b0f; color:#e0e0ff; }
-    header { padding:20px 40px; }
-    header h1 { color:#c084fc; }
-    main { max-width:900px; margin:50px auto; padding:20px; text-align:center; }
-    .stat {
-      font-size:3rem; font-weight:bold; color:#a855f7; margin:20px 0;
+    body {
+      margin:0; font-family: 'Segoe UI', sans-serif;
+      background:#0b0b0f; color:#e0e0ff;
     }
-    .reviews { margin-top:40px; }
-    .review {
-      background:#18181b; border-radius:12px; padding:20px; margin:15px 0;
-      box-shadow:0 0 15px rgba(168,85,247,0.2);
+    header {
+      display:flex; align-items:center; padding:20px 40px;
     }
-    .review p { font-size:1rem; color:#ccc; }
-    .review strong { color:#c084fc; }
-    a { color:#c084fc; text-decoration:none; }
+    header h1 { color:#c084fc; font-size:1.5rem; }
+    main {
+      display:flex; flex-direction:column; justify-content:center; align-items:center;
+      text-align:center; height:80vh;
+    }
+    main h2 {
+      font-size:2.5rem; margin-bottom:40px; color:#a855f7;
+    }
+    .cards {
+      display:flex; gap:30px; flex-wrap:wrap; justify-content:center;
+    }
+    .card {
+      background:#18181b; border-radius:12px; padding:40px;
+      width:260px; text-align:center; transition:0.3s; cursor:pointer;
+      box-shadow:0 0 20px rgba(168,85,247,0.2);
+    }
+    .card:hover { transform:translateY(-5px); box-shadow:0 0 30px rgba(168,85,247,0.4); }
+    .card h3 { color:#c084fc; margin-bottom:10px; }
+    .card p { font-size:0.95rem; color:#aaa; }
+    a { text-decoration:none; color:inherit; }
+    footer { text-align:center; padding:20px; font-size:0.9rem; color:#777; }
   </style>
 </head>
 <body>
   <header>
-    <h1><a href="index.html">← Back</a> | Analytics</h1>
+    <h1>Ventures Algo</h1>
   </header>
 
   <main>
-    <h2>Performance Overview</h2>
-    <div class="stat">78% Win Rate</div>
-    <p>Our algorithm consistently delivers profitable signals, tested across multiple markets.</p>
-
-    <h3 style="margin-top:40px; color:#c084fc;">Client Reviews</h3>
-    <div class="reviews">
-      <div class="review"><p><strong>Alex:</strong> "Solid 6 months of profits. Reliable signals."</p></div>
-      <div class="review"><p><strong>Sophie:</strong> "Finally an algo that actually works!"</p></div>
-      <div class="review"><p><strong>James:</strong> "78% win rate held true in my backtests."</p></div>
+    <h2>Modern Trading with AI Precision</h2>
+    <div class="cards">
+      <a href="analytics.html">
+        <div class="card">
+          <h3>Analytics</h3>
+          <p>View our performance stats and client reviews.</p>
+        </div>
+      </a>
+      <a href="pricing.html">
+        <div class="card">
+          <h3>Pricing</h3>
+          <p>Choose between lifetime access or monthly plans.</p>
+        </div>
+      </a>
     </div>
   </main>
+
+  <footer>
+    &copy; 2025 Ventures Algo. All rights reserved.
+  </footer>
 </body>
 </html>
